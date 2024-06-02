@@ -34,7 +34,7 @@ main {
 }
 
 .feature-section__title {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--blue-900);
   font-weight: var(--font-bold);
   margin-bottom: 1rem;
