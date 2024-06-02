@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [TBD](TBD)
-- Live Site URL: [TBD](TBD)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-layout-with-css-grid-and-flexbox-K09KK-528d](https://www.frontendmentor.io/solutions/responsive-layout-with-css-grid-and-flexbox-K09KK-528d)
+- Live Site URL: [https://four-card-section-challenge-zeta.vercel.app/](https://four-card-section-challenge-zeta.vercel.app/)
 
 ## My process
 
