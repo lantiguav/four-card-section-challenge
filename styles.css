@@ -1,0 +1,148 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue-400: hsl(212, 86%, 64%);
+  --blue-900: hsl(234, 12%, 34%);
+  --gray-400: hsl(229, 6%, 48%);
+  --gray-100: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-thin: 200;
+  --font-normal: 400;
+  --font-bold: 600;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  padding: 0 1rem;
+}
+
+body {
+  background-color: var(--gray-100);
+  position: relative;
+  min-height: 100dvh;
+
+}
+main {
+  max-width: 120ch;
+  margin: 0 auto;
+}
+
+.feature-section {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.feature-section__title {
+  font-size: 2rem;
+  color: var(--blue-900);
+  font-weight: var(--font-bold);
+  margin-bottom: 1rem;
+}
+
+.feature-section__title--thin {
+  font-weight: var(--font-thin);
+}
+
+.feature-section__copy {
+  color: var(--gray-400);
+  margin-bottom: 2rem;
+  text-wrap: pretty;
+  max-width: 55ch;
+  margin: 0 auto 4rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 0.5rem hsl(212, 86%, 64%, 0.2);
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  background-color: var(--white);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background-color: var(--accent-color, var(--red));
+  }
+}
+
+.card__title {
+  color: var(--blue-900);
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.card__copy {
+  color: var(--gray-400);
+  width: 100%;
+}
+
+.card__icon {
+  margin-top: 1rem;
+}
+
+
+
+.card--cyan {
+  --accent-color: var(--cyan);
+  grid-area: cyan;
+}
+
+.card--orange {
+  --accent-color: var(--orange);
+  grid-area: orange;
+}
+.card--blue {
+  --accent-color: var(--blue-400);
+  grid-area: blue;
+}
+
+.card--red {
+  --accent-color: var(--red);
+  grid-area: red;
+}
+
+
+
+
+
+.cards-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: 
+    "cyan" 
+    "red" 
+    "orange" 
+    "blue";
+}
+
+@media (min-width: 48rem) {
+  .cards-grid {
+    grid-template-areas: 
+      ". red ."
+      "cyan red blue"
+      "cyan orange blue"
+      ". orange .";
+  }
+  
+}
+
+
+.attribution {
+  position: absolute;
+  padding: 1rem;
+  inset: 0;
+  top: unset;
+  margin: auto;
+  text-align: center;
+}
